@@ -37,7 +37,6 @@ public class TablaHash {
             }else{
                 j++;
             }
-            
             if(j==m)
                 j=0;
         }while(j<m && i!=true);
