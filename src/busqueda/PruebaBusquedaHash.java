@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 public class PruebaBusquedaHash {
 
     public static void main(String[] args) {
+        try {
         int i,num_pro,precio=0,opc;
         String nombre_pro="";
         
@@ -52,5 +53,10 @@ public class PruebaBusquedaHash {
                    break;
            }
         }while(opc!=5);
+         } catch (NumberFormatException nfe) {
+            javax.swing.JOptionPane.showMessageDialog(null, "Está Saliendo del Programa");
+        } catch (OutOfMemoryError ome) {
+            javax.swing.JOptionPane.showMessageDialog(null, "No Hay Espacio");
+        }
     }
 }
